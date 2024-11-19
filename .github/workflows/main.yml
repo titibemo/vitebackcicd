@@ -44,7 +44,7 @@ jobs:
           server: ftp.abhi4136.odns.fr
           username: 03@01-web.formation-adapeco-sofip.com
           password: aqFbABLGFz6wVhLe
-          local-dir: backNul/public/dist
+          local-dir: backNul/public/dist/
           server-dir: /03/
       
       - name: Install dependencies
