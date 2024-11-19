@@ -36,7 +36,7 @@ jobs:
 
       - name: Move frontend to backend
         run: |
-          cp -r vite-thierry/dist/ backNul/public/
+          mv vite-thierry/dist backNul/public
 
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
@@ -44,10 +44,10 @@ jobs:
           server: ftp.abhi4136.odns.fr
           username: 03@01-web.formation-adapeco-sofip.com
           password: aqFbABLGFz6wVhLe
-          local-dir: backNul/dist/
+          local-dir: vite-thierry/dist/
           server-dir: /03/
       
-      - name: run serveur
+      - name: Install dependencies
         run: |
           cd backNul
           node server.js
