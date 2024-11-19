@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json())
 const http = require('http');
 const server = http.createServer(app);
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: ["http://localhost:5173", "https://01-web.formation-adapeco-sofip.com"] }));
 
 
 
