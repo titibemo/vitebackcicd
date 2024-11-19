@@ -36,7 +36,7 @@ jobs:
 
       - name: Move frontend to backend
         run: |
-          mv vite-thierry/dist backNul/public
+          cp -r vite-thierry/dist/ backNul/public/
 
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
