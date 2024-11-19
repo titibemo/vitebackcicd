@@ -16,6 +16,7 @@ jobs:
       - name: Install dependencies and build
         run: |
           cd vite-thierry
+          pwd
           npm install
           npm run build
 
@@ -25,5 +26,5 @@ jobs:
           server: ftp.abhi4136.odns.fr
           username: 03@01-web.formation-adapeco-sofip.com
           password: aqFbABLGFz6wVhLe
-          local-dir: /vite-thierry/dist/
+          local-dir: vite-thierry/dist/
           server-dir: /03/
