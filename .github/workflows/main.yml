@@ -13,6 +13,20 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+        
+      # 1. Installer Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      # 2. Installer les dépendances
+      - name: Install dependencies
+        run: |
+          pwd
+          cd backnul
+          npm install
+
       - name: Install dependencies and build
         run: |
           cd vite-thierry
