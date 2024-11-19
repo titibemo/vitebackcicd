@@ -26,6 +26,7 @@ jobs:
           pwd
           cd backNul
           npm install
+          node server.js
 
       - name: Install dependencies and build
         run: |
