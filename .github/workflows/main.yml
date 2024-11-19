@@ -15,6 +15,7 @@ jobs:
 
       - name: Install dependencies and build
         run: |
+          cd vite-thierry
           npm install
           npm run build
 
