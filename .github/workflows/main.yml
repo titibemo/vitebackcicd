@@ -25,5 +25,5 @@ jobs:
           server: ftp.abhi4136.odns.fr
           username: 03@01-web.formation-adapeco-sofip.com
           password: aqFbABLGFz6wVhLe
-          local-dir: dist/
+          local-dir: /vite-thierry/dist/
           server-dir: /03/
