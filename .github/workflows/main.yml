@@ -26,7 +26,6 @@ jobs:
           pwd
           cd backNul
           npm install
-          node server.js
 
       - name: Install dependencies and build
         run: |
@@ -47,3 +46,8 @@ jobs:
           password: aqFbABLGFz6wVhLe
           local-dir: vite-thierry/dist/
           server-dir: /03/
+      
+      - name: Install dependencies
+        run: |
+          cd backNul
+          node server.js
