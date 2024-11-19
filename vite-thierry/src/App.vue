@@ -15,7 +15,7 @@ const a = ref(null);
 
 const user = async () => {
     try {
-      const response = await fetch(`03@01-web.formation-adapeco-sofip.com/03/03/api/user/listUser`, {
+      const response = await fetch(`http://01-web.formation-adapeco-sofip.com/03/03/api/user/listUser`, {
           method: 'get',
 
       })
