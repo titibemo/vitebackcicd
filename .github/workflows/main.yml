@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           pwd
-          cd backnul
+          cd backNul
           npm install
 
       - name: Install dependencies and build
